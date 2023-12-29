@@ -34,7 +34,7 @@ module.exports = {
                 ],
             },
         ],
-        'vue/v-for-delimiter-style': ['error', 'of'],
+        'vue/multi-word-component-names': 'off',
         'vue/next-tick-style': ['error', 'promise'],
         'vue/require-prop-types': 'error',
         'vue/prop-name-casing': ['error', 'camelCase'],

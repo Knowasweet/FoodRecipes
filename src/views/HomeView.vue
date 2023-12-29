@@ -1,9 +1,11 @@
 <template>
-  <TheHeader />
-  <TheMain />
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <script setup>
-import TheHeader from '@/components/TheHeader.vue'
-import TheMain from '@/components/TheMain.vue'
+import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
+import Footer from '@/components/Footer.vue'
 </script>

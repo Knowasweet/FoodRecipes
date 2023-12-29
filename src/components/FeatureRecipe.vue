@@ -1,23 +1,18 @@
 <template>
-  <div class="rounded-lg border-2 border-lightgray">
-    <img
-      src="../assets/img/feature0.svg"
-      alt="FeatureRecipe"
-      height="280"
-      class="z-10 w-full rounded-t-lg border-2 border-transparent"
-    />
-    <div class="mx-6 w-80 pt-6">
-      <p class="line-clamp-2 text-xl font-semibold">
-        {{ title }}
-      </p>
-      <div class="flex justify-end py-4">
-        <div class="w-30 mr-6 inline-block truncate">
-          <img src="@/assets/icons/tag.svg" alt="Category" class="inline-block" />
-          {{ category }}
+  <div class="mx-auto">
+    <img src="../assets/img/feature0.svg" alt="FeatureRecipe" class="rounded-t-lg" />
+    <div class="rounded-b-lg border-2 border-t-0 border-lightgray px-4 pt-3 lg:pt-4">
+      <h4 class="mb-4 line-clamp-2">
+        {{ featureRecipe.title }}
+      </h4>
+      <div class="mb-2 flex gap-4 lg:mb-4">
+        <div class="ml-auto flex items-center gap-1">
+          <img src="@/assets/icons/tag.svg" alt="Category" class="h-3 w-3" />
+          <h6 class="text-gray">{{ featureRecipe.category }}</h6>
         </div>
-        <div class="w-30 inline-block truncate">
-          <img src="@/assets/icons/flag.svg" alt="Country" class="inline-block" />
-          {{ country }}
+        <div class="flex items-center gap-1 truncate">
+          <img src="@/assets/icons/flag.svg" alt="Country" class="h-3 w-3" />
+          <h6 class="text-gray">{{ featureRecipe.country }}</h6>
         </div>
       </div>
     </div>
@@ -26,10 +21,9 @@
 
 <script setup>
 defineProps({
-  title: String,
-  category: String,
-  country: String,
+  featureRecipe: {
+    type: Object,
+    required: true,
+  },
 })
 </script>
-
-<style scoped></style>
