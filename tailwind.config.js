@@ -3,8 +3,11 @@ export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      sm: '320px',
-      lg: '1440px',
+      xs: '320px',
+      sm: '500px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
     },
     colors: {
       transparent: 'transparent',
@@ -19,13 +22,19 @@ export default {
     },
     fontSize: {
       xs: '0.5rem',
-      sm: '0.7rem',
+      sm: '0.75rem',
+      md: '0.9rem',
       base: '1rem',
+      lg: '1.1rem',
       xl: '1.25rem',
-      '2xl': '1.500rem',
-      '3xl': '1.835rem',
-      '4xl': '2.441rem',
-      '5xl': '3.052rem',
+      '1.5xl': '1.5rem',
+      '2xl': '2rem',
+      '2.5xl': '2.5rem',
+      '3xl': '3rem',
+      '3.5xl': '3.5rem',
+      '4xl': '4rem',
+      '4.5xl': '4.5rem',
+      '5xl': '5rem',
     },
     fontFamily: {
       playfair: ['Playfair Display', 'serif'],

@@ -15,42 +15,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
-h1 {
-    font-size: 5.05rem;
-}
-
-h2 {
-    font-size: 2.75rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.35rem;
-}
-
-h5 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.05rem;
-}
-
-h6 {
-    font-size: 0.85rem;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 1439px) {
-    h1{
-        font-size: 1.635rem;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
-    h4 {
-        font-size: 0.7rem;
-    }
-    h5 {
-        font-size: 0.7rem;
+@layer utilities {
+    .custom-container {
+        @apply mx-8 md:mx-16 lg:mx-32;
     }
 }

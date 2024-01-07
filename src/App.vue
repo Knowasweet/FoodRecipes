@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="xl:container mx-auto">
     <RouterView />
   </div>
 </template>

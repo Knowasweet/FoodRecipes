@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="mb-4 lg:mb-10">
+    <h2 class="xl:text-3xl lg:text-2.5xl text-1.5xl mb-4 md:mb-10 md:text-2xl">
       {{ title }}
     </h2>
     <slot></slot>

@@ -1,11 +1,11 @@
 <template>
   <div>
     <img
-      src="../assets/img/feature0.svg"
+      :src="lastRecipe.img"
       alt="recipe"
-      class="mb-1 rounded-lg border-2 border-transparent lg:mb-2"
+      class="mb-1 rounded-md border-2 border-transparent md:mb-2"
     />
-    <h4 class="line-clamp-2">
+    <h4 class="sm:text-md line-clamp-2 text-sm md:text-base lg:text-xl">
       {{ lastRecipe.title }}
     </h4>
   </div>
